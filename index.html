@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>huzaifa quiz app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="setQuestion()">
+    <h2>Quiz App</h2>
+        <section class="mainBox" id="quizBox">
+            <div class="header">
+                <h2 id="HtmlQues">Question # 1</h2>
+            </div>
+            <div class="body">
+                <ul>
+                    <li onclick="checkAns(this)" class="htmlOption">Option 1</li>
+                    <li onclick="checkAns(this)" class="htmlOption">Option 2</li>
+                    <li onclick="checkAns(this)" class="htmlOption">Option 3</li>
+                    <li onclick="checkAns(this)" class="htmlOption">Option 4</li>
+                </ul>
+
+            </div>
+                <div class="bottom">
+                    <span class="counterValClass" id="counterValue">1/7</span>
+        <button onclick="nextQue()"  id="nextQuestion" class="hide">Next Question</button>
+                    <!-- <button onclick="previousQue()">Previous Question</button> -->
+                </div>
+   
+        </section> 
+        <div class="hide resultClass" id="result">
+     
+        </div>
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
